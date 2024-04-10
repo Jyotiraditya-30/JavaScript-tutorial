@@ -23,3 +23,4 @@ const greeting = (person) => {
 
 // console.log(greeting({ name: "Alice" }));
 // console.log(greeting(null)); 
+
