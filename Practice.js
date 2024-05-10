@@ -94,7 +94,7 @@ let result = Math.round(data * 100) / 100
 // const value = [1, 3, -10, 4, 5, 11, 23];
 // const sortedNumbers = bubbleSort(value);
 
-// console.log(sortedNumbers); // Output: [-10, 1, 3, 4, 5, 11, 23]
+// onsole.log(sortedNumbers); // Output: [-10, 1, 3, 4, 5, 11, 23]
 
 function Sort(arr) {
   const Jyotir = arr.length;
