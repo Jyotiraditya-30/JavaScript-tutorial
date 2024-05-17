@@ -97,4 +97,4 @@ function sum([a, b]) {
 }
 
 const numbers = [3, 4];
-console.log(sum(numbers)); // Output: 7
+// console.log(sum(numbers)); // Output: 7
