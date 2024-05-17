@@ -57,23 +57,3 @@
 // // }
 // // console.log(addTwo(5))
 
-
-// // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
-
-// (function () {
-//     // This code will execute immediately
-//     var message = "Hello, world!";
-//     console.log(message);
-// })();
-
-// function normalFunction() {
-//     myVar = "I'm a global variable!";
-// }
-// normalFunction();
-// console.log(myVar);
-
-(function () {
-    var myVar = "I'm a local variable inside an IIFE!";
-})();
-
-console.log(myVar); 
