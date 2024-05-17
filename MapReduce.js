@@ -1,52 +1,61 @@
-const myNums = [1,2,3,4,5,6,7,8,9,10]
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FILTERS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
 
-// const newNums = myNums
-//                 .map((num) => num * 10)
-//                 .map((num) => num + 1)
-//                 .filter((num) => num >= 40)
-// console.log(newNums)
+// const Values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let newValues = Values.filter((element) => element > 4)
+// console.log(newValues)
 
-// const newNums = myNums.reduce((acc, curv)=>{
-//     console.log(`acc: ${acc} and curv: ${curv}`)
-//     return acc + curv
-// }, 0)
+// let newValuess = Values.filter((element) => {
+//     return element > 4;
 
-// console.log(newNums)
+// })
+// console.log(newValuess)
+// let nValues
+// Values.forEach((y) => {
+//     if (y > 4) {
+//         nValues.push(y)
+//     }
+// })
+// console.log(nValues)
 
+// arr = new Array(1, 2, 3, 6, 5, 4);
+// var new_arr = arr.filter(function (x) {
+//     return x;
+// });
+// console.log(new_arr)
 
-const shoppingCart =[
-    {
-        itemName: 'Java course',
-        price: 999,
-    },
-    {
-        itemName: 'Python course',
-        price: 1999,
-    },
-    {
-        itemName: 'Golang course',
-        price: 1499,
-    },
-    {
-        itemName: 'JavaScript course',
-        price: 899,
-    },
-    {
-        itemName: 'Swift course',
-        price: 2999,
-    }
-]
+const books = [
+    { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
+    { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
+    { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 },
+    { title: 'Book Four', genre: 'Non-Fiction', publish: 1989, edition: 2010 },
+    { title: 'Book Five', genre: 'Science', publish: 2009, edition: 2014 },
+    { title: 'Book Six', genre: 'Fiction', publish: 1987, edition: 2010 },
+    { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 },
+    { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
+    { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
+];
 
-const PriceAll = shoppingCart.reduce((acc, item)=>{
-  return acc + item.price
-},0)
+// let userBook = books.map((bk) => {
+//     return (bk.genre == 'History' || bk.publish == 1992)
+// })
+let userBook = books.filter((bk) => {
+    return (bk.title)
+})
+console.log(userBook)
 
-// console.log(PriceAll)
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Map ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
 
-const article = shoppingCart.filter((item)=> item.itemName == "Java course" )
+const Numnbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-console.log(article)
+let newNumbers = Numnbers.map((nums) => nums + 10)
+console.log(newNumbers)
 
-const a = shoppingCart.map((item)=>  item)
+var officers = [
+    { id: 20, name: 'Captain Piett' },
+    { id: 24, name: 'General Veers' },
+    { id: 56, name: 'Admiral Ozzel' },
+    { id: 88, name: 'Commander Jerjerrod' }
+];
 
-console.log(a)
+const officersIds = officers.map((officer) => officer.id);
+console.log(officersIds)

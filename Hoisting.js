@@ -8,16 +8,26 @@
 
 */
 
-let y;
-console.log(y)
-y = 10;
+// let y;
+// console.log(y)
+// y = 10;
 
-x = 10
-console.log(x)
-var x;
+// x = 10
+// console.log(x)
+// var x;
 
-AddTwoNumbers(2, 3);
-function AddTwoNumbers(a, b) {
-    var num = a + b;
-    console.log(num)
+// AddTwoNumbers(2, 3);
+// function AddTwoNumbers(a, b) {
+//   var num = a + b;
+//   console.log(num)
+// }
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+
+for (var i = 0; i < 5; i++) {
+  setTimeout(() => {
+    console.log(i)
+  }, 1000
+  )
+  console.log(i)
 }
