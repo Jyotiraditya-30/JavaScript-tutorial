@@ -44,8 +44,8 @@ const person1 = {
     age: 30,
     profession: 'Developer'
 };
-const { name1: fullName1, age1: yearsOld, profession: job } = person1;
-// console.log(fullName1);
+const { name: fullName, age: yearsOld, profession: job } = person1;
+// console.log(fullName);
 // console.log(yearsOld);
 // console.log(job);
 
@@ -56,7 +56,7 @@ const person2 = {
     age: 30
 };
 const { name2, age2, profession2 = 'Unknown' } = person2;
-// console.log(profession); // Output: Unknown
+// console.log(profession2); // Output: Unknown
 
 // ++++++++++++++++++++++++++++++++++++ Nested Object Destructuring: ++++++++++++++++++++++++++++++++++++++++++++++ //
 
@@ -97,4 +97,4 @@ function sum([a, b]) {
 }
 
 const numbers = [3, 4];
-// console.log(sum(numbers)); // Output: 7
+console.log(sum(numbers)); // Output: 7
