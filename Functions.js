@@ -25,15 +25,7 @@
 
 // // console.log(calculateCartPrice(200, 400, 500, 2000))
 
-// const user = {
-//     username: "",
-//     hitesh: "",
-//     price: 199
-// }
 
-// function handleObject(anyobject) {
-//     // console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
-// }
 
 // // handleObject(user)
 // handleObject({
@@ -109,23 +101,95 @@
 // console.log(myVar); 
 
 
-let x = 10;
-let y = 20;
+// let x = 10;
+// let y = 20;
 
-function normalFunction() {
-    globalVar = "I am a global variable!";
-    console.log(globalVar);
+// function normalFunction() {
+//     globalVar = "I am a global variable!";
+//     console.log(globalVar);
+// }
+
+// normalFunction();
+
+
+// (function () {
+//     localVar = "I am a local variable!";
+//     console.log(localVar); // Output: I am a local variable!
+// })();
+
+// console.log(localVar);
+
+// normalFunction();
+
+// +++++++++++++++++++++++++++++++++++++++++ CALLBACK +++++++++++++++++++++++++++++++++++ //
+
+// function firstFunction() {
+//     return new Promise((resolve) => {
+//         setTimeout(function () {
+//             console.log("First function completed");
+//             resolve();
+//         }, 1000);
+//     });
+// }
+
+// function secondFunction() {
+//     return new Promise((resolve) => {
+//         setTimeout(function () {
+//             console.log("Second function completed");
+//             resolve();
+//         }, 1000);
+//     });
+// }
+
+// function thirdFunction() {
+//     return new Promise((resolve) => {
+//         setTimeout(function () {
+//             console.log("Third function completed");
+//             resolve();
+//         }, 1000);
+//     });
+// }
+
+// async function runFunctions() {
+//     await firstFunction();
+//     await secondFunction();
+//     await thirdFunction();
+//     console.log("All functions completed");
+// }
+
+// runFunctions();
+
+function firstFunction() {
+    return new Promise((resolve) => {
+        setTimeout(function () {
+            console.log("First function completed");
+            resolve();
+        }, 1000);
+    });
 }
 
-normalFunction();
+function secondFunction() {
+    return new Promise((resolve) => {
+        console.log(Promise)
+        setTimeout(function () {
+            console.log("Second function completed");
+            resolve();
+        }, 1000);
+    });
+}
 
+function thirdFunction() {
+    return new Promise((resolve) => {
+        setTimeout(function () {
+            console.log("Third function completed");
+            resolve();
+        }, 1000);
+    });
+}
 
-(function () {
-    localVar = "I am a local variable!";
-    console.log(localVar); // Output: I am a local variable!
-})();
-
-console.log(localVar);
-
-
-normalFunction();
+firstFunction()
+    .then(secondFunction)
+    .then(thirdFunction)
+    .then(() => {
+        console.log("All functions completed");
+    });

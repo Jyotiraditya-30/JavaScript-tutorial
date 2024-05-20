@@ -56,7 +56,7 @@ const person2 = {
     age: 30
 };
 const { name2, age2, profession2 = 'Unknown' } = person2;
-// console.log(profession2); // Output: Unknown
+// console.log(profession); // Output: Unknown
 
 // ++++++++++++++++++++++++++++++++++++ Nested Object Destructuring: ++++++++++++++++++++++++++++++++++++++++++++++ //
 
