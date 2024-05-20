@@ -53,17 +53,41 @@
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
 
-try {
-    try {
-        throw new Error("oops");
-    } catch (ex) {
-        console.error("inner", ex.message);
-        throw ex;
-    } finally {
-        console.log("finally");
-    }
-} catch (ex) {
-    console.error("outer", ex.message);
-}
+// try {
+//     try {
+//         throw new Error("oops");
+//     } catch (ex) {
+//         console.error("inner", ex.message);
+//         throw ex;
+//     } finally {
+//         console.log("finally");
+//     }
+// } catch (ex) {
+//     console.error("outer", ex.message);
+// }
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+
+let n = 0;
+let x = 0;
+
+while (n < 3) {
+    n++;
+    x += n;
+}
+
+console.log(x)
+
+function printPyramid(rows) {
+    for (let i = 1; i <= rows; i++) {
+        let str = ' '.repeat(rows - i);
+        let stars = '*'.repeat(2 * i - 1);
+        console.log(str + stars + str);
+    }
+}
+
+printPyramid(5);
+
+let text = "Hello world!";
+let result = text.repeat(2);
+console.log(result)
