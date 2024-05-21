@@ -28,7 +28,7 @@
 
 
 // // handleObject(user)
-// handleObject({
+// handleObject(
 //     username: "sam",
 //     price: 399
 // })
@@ -78,6 +78,59 @@
 
 // asyncCall();
 
+// // ++++++++++++++++++++++++++++++++++ Arrow Function ++++++++++++++++++++++++++++++++++++++++++ //
+
+// const sum = (a, b) => a + b;
+// console.log(sum(5, 10));
+
+// // ************************************************************* //
+
+// const num = (a, b) => {
+//     return a + b;
+// };
+// console.log(num(10, 20));
+
+// // ************************************************************* //
+
+// const double = n => n * 2;
+// console.log(double(4));
+
+// // ************************************************************* //
+
+// const createUser = (name, age) => ({ name: name, age: age });
+// console.log(createUser('Alice', 30));
+
+// // ************************************************************* //
+
+// function Timer() {
+//     this.seconds = 0;
+//     this.intervalId = setInterval(() => {
+//         if (this.seconds < 10) {
+//             this.seconds++;
+//             console.log(this.seconds);
+//         } else {
+//             clearInterval(this.intervalId);
+//         }
+//     }, 1000);
+// }
+
+// const timer = new Timer();
+
+// // ************************************************************* //
+
+// const sumAll = (...numbers) => numbers.reduce((total, num) => total + num, 0);
+// console.log(sumAll(1, 2, 3, 4));
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// const doubled = numbers.map(n => n * 2);
+// console.log(doubled); // Output: [2, 4, 6, 8, 10]
+
+// const evens = numbers.filter(n => n % 2 === 0);
+// console.log(evens); // Output: [2, 4]
+
+// const sum1 = numbers.reduce((total, n) => total + n, 0);
+// console.log(sum1); // Output: 15
 
 
 // // ++++++++++++++++++++++++++++++++++ IIFE's ++++++++++++++++++++++++++++++++++++++++++ //
@@ -98,7 +151,7 @@
 //     var myVar = "I'm a local variable inside an IIFE!";
 // })();
 
-// console.log(myVar); 
+// console.log(myVar);
 
 
 // let x = 10;
@@ -136,95 +189,3 @@
 // Call myCalculator with numbers and the callback function
 // myCalculator(5, 5, callback);
 
-// ++++++++++++++++++++++++++++++++++++++++ PROMISE ++++++++++++++++++++++++++++++++++++ //
-
-function fetchData() {
-    return new Promise((resolve, reject) => {
-        // Simulate an asynchronous operation (e.g., fetching data from a server)
-        const data = { name: 'John', age: 30 };
-        const data1 = { name: 'Jyotir', age: 22 }
-        // Simulate successful data retrieval
-        resolve(data);
-        reject(data1);
-    });
-}
-
-// Using the promise
-fetchData()
-    .then(data => {
-        console.log('Data received:', data);
-    })
-    .catch(error => {
-        console.error('Error fetching data:', error);
-    });
-
-// function firstFunction() {
-//     return new Promise((resolve) => {
-//         setTimeout(function () {
-//             console.log("First function completed");
-//             resolve();
-//         }, 1000);
-//     });
-// }
-
-// function secondFunction() {
-//     return new Promise((resolve) => {
-//         setTimeout(function () {
-//             console.log("Second function completed");
-//             resolve();
-//         }, 1000);
-//     });
-// }
-
-// function thirdFunction() {
-//     return new Promise((resolve) => {
-//         setTimeout(function () {
-//             console.log("Third function completed");
-//             resolve();
-//         }, 1000);
-//     });
-// }
-
-// async function runFunctions() {
-//     await firstFunction();
-//     await secondFunction();
-//     await thirdFunction();
-//     console.log("All functions completed");
-// }
-
-// runFunctions();
-
-// function firstFunction() {
-//     return new Promise((resolve) => {
-//         setTimeout(function () {
-//             console.log("First function completed");
-//             resolve();
-//         }, 1000);
-//     });
-// }
-
-// function secondFunction() {
-//     return new Promise((resolve) => {
-//         console.log(Promise)
-//         setTimeout(function () {
-//             console.log("Second function completed");
-//             resolve();
-//         }, 1000);
-//     });
-// }
-
-// function thirdFunction() {
-//     return new Promise((resolve) => {
-//         setTimeout(function () {
-//             console.log("Third function completed");
-//             resolve();
-//         }, 1000);
-//     });
-// }
-
-// firstFunction()
-//     .then(secondFunction)
-//     .then(thirdFunction)
-//     .then(() => {
-//         console.log("All functions completed");
-//     });
