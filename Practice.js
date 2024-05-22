@@ -96,19 +96,46 @@ let result = Math.round(data * 100) / 100
 
 // onsole.log(sortedNumbers); // Output: [-10, 1, 3, 4, 5, 11, 23]
 
-function Sort(arr) {
-  const Jyotir = arr.length;
-  for (let i = 0; i < Jyotir - 1; i++) {
-    if (arr[i] > arr[i + 1]) {
-      // Swap arr[j] and arr[j+1]
-      console.log(i)
-      let temp = arr[i];
-      arr[i] = arr[i + 1];
-      arr[i + 1] = temp;
-    }
-  }
-  return arr;
-}
-const value = [1, 3, -10, 4, 5, 11, 23];
-const sortedNumbers = Sort(value);
-console.log(sortedNumbers);
+// function Sort(arr) {
+//   const Jyotir = arr.length;
+//   for (let i = 0; i < Jyotir - 1; i++) {
+//     if (arr[i] > arr[i + 1]) {
+//       // Swap arr[j] and arr[j+1]
+//       console.log(i)
+//       let temp = arr[i];
+//       arr[i] = arr[i + 1];
+//       arr[i + 1] = temp;
+//     }
+//   }
+//   return arr;
+// }
+// const value = [1, 3, -10, 4, 5, 11, 23];
+// const sortedNumbers = Sort(value);
+// console.log(sortedNumbers);
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+
+// function first() {
+//   console.log("First")
+// }
+
+// function second() {
+//   setTimeout(() => {
+//     console.log("Second")
+//   }, 1000)
+
+// }
+// function third() {
+//   Promise.resolve().then(() => {
+//     console.log("third")
+//   })
+// }
+// function fourth() {
+//   console.log("Fourth")
+// }
+
+
+// first();
+// second();
+// third();
+// fourth();
