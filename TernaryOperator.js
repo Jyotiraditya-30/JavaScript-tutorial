@@ -24,3 +24,15 @@ const greeting = (person) => {
 // console.log(greeting({ name: "Alice" }));
 // console.log(greeting(null)); 
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ //
+
+var obj = {
+    x: true,
+    y: {
+        xy: 'some value'
+    }
+}
+
+var result = obj ? obj.y ? obj.y.xy ? obj.y.xy : 'N/A' : 'N/A' : 'N/A'
+
+console.log(result) 
