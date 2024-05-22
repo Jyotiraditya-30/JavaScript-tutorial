@@ -45,11 +45,11 @@
 
 
 
-// // function addone(num){
-// //     return num + 1
-// // }
+function addone(num, num2, num3) {
+    return num + num2 + num3 + 1
+}
 
-// // console.log(addone(5))
+console.log(addone(2, 4, 3))
 
 
 // // const addTwo = function(num){
