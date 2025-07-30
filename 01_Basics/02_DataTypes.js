@@ -8,7 +8,15 @@ let isSubscribed = false // boolean
 
 // ++++++++ Data Types +++++++++++++ //
 
-// Primitive Data type
+// Primitive Data type ( Stack Memory )
+
+/* 7 types : String, Number, Boolean, null, undefined, Symbol, BigInt */
+
+// Reference type (Non Premetive data type) ( Heap Memory )
+
+/* Array, Objects, Functions */
+
+
 
 /*
 number => 2^53
