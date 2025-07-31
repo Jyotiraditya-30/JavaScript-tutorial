@@ -5,5 +5,8 @@ console.log(newDate.getTime()/1000)
 console.log(newDate.getFullYear())
 console.log(newDate.getHours())
 
-console.log(newDate.toLocaleString())
+console.log(newDate.toLocaleString('default', {
+    weekday: "long",
+    timezone: ''
+}))
 
