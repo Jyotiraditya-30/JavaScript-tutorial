@@ -14,10 +14,10 @@ function fetchData() {
 // Using the promise
 fetchData()
     .then(data => {
-        console.log('Data received:', data);
+        // console.log('Data received:', data);
     })
     .catch(error => {
-        console.error('Error fetching data:', error);
+        // console.error('Error fetching data:', error);
     });
 
 // function firstFunction() {
@@ -90,3 +90,43 @@ fetchData()
 //     .then(() => {
 //         console.log("All functions completed");
 //     });
+
+// +++++++++++++++++++++++++++++++++++++++++++ Median of Two Array +++++++++++++++++++++++++++++ //
+
+// function MedianOfArray(arr1, arr2)
+// {
+//     let marge = [...arr1,...arr2].sort((a, b) => a - b)
+//     let len = marge.length
+
+
+//         if(len % 2 == 0)
+//         {
+//            return median  = (marge[((len / 2) - 1)] + marge[(len/ 2)]) / 2
+//         }
+//         else
+//         {
+//           return  median = marge[Math.floor(len / 2)]
+        
+//         }
+
+// }
+
+// console.log(MedianOfArray([1,2,3,4], [8,9,10,6,7]))
+
+// ++++++++++++++++++++++++++++++++++++++ reverse an array ++++++++++++++++++++++++++++++++++++++++ //
+
+function reverseArray(arr1)
+{
+    let ReverseArr = []
+    
+    for (let i=arr1.length-1; i>=0; i--)
+    {
+        ReverseArr.push(arr1[i])
+    }
+    return ReverseArr
+
+}
+
+console.log(reverseArray([1,2,8,3,4]))
+
+// +++++++++++++++++++++++++++++++++++++ duplicate removal in array 
